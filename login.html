@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Логин - Overlay.cc</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="rain"></div>
+    <div class="tabs">
+        <a href="index.html" class="tab-button">Главная</a>
+        <a href="products.html" class="tab-button">Товары</a>
+        <a href="login.html" class="tab-button active">Логин</a>
+    </div>
+
+    <div class="content">
+        <h2 class="gradient-text">Логин</h2>
+        <form id="login-form">
+            <input type="text" id="login-username" placeholder="Имя пользователя" required>
+            <input type="password" id="login-password" placeholder="Пароль" required>
+            <button type="submit" class="button">Войти</button>
+        </form>
+        <p>Нет аккаунта? <a href="#" id="switch-to-register">Зарегистрироваться</a></p>
+    </div>
+
+    <div class="content" id="register-form" style="display: none;">
+        <h2 class="gradient-text">Регистрация</h2>
+        <form id="register-form">
+            <input type="text" id="register-username" placeholder="Имя пользователя" required>
+            <input type="password" id="register-password" placeholder="Пароль" required>
+            <button type="submit" class="button">Зарегистрироваться</button>
+        </form>
+        <p>Уже есть аккаунт? <a href="#" id="switch-to-login">Войти</a></p>
+    </div>
+
+    <div class="support">
+        <p>Поддержка: <a href="mailto:support@overlay.cc">support@overlay.cc</a></p>
+    </div>
+
+    <footer>
+        <p>Не беру ответственность за ваши устройства.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
